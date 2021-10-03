@@ -1,0 +1,22 @@
+.footer {
+    height: 10vh;
+    margin: 0 1rem;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    margin-left: 0.5rem;
+}
+
+.footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 1em;
+}

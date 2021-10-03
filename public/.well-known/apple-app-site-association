@@ -1,0 +1,21 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "4W59Y626BJ.com.fnh29.app.crypto",
+                "paths": ["*"]
+            },
+            {
+                "appID": "4W59Y626BJ.com.fnh29.app.stock",
+                "paths": ["*"]
+            }
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "4W59Y626BJ.com.fnh29.app.crypto",
+            "4W59Y626BJ.com.fnh29.app.stock"
+        ]
+    },
+}

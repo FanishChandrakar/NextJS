@@ -1,0 +1,22 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.fnh29.app.crypto",
+            "sha256_cert_fingerprints": [
+                "D0:76:12:22:35:0E:78:1B:E8:F7:3A:84:AF:4C:C1:24:7F:7B:28:E6:85:CC:99:C3:D2:23:4F:62:3A:6D:B6:37"
+            ]
+        }
+    },
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.fnh29.app.stock",
+            "sha256_cert_fingerprints": [
+                "D0:76:12:22:35:0E:78:1B:E8:F7:3A:84:AF:4C:C1:24:7F:7B:28:E6:85:CC:99:C3:D2:23:4F:62:3A:6D:B6:37"
+            ]
+        }
+    }
+]

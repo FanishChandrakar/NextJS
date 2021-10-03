@@ -1,0 +1,21 @@
+.container {
+    min-height: 90vh;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 0;
+    text-align: center;
+    color: firebrick;
+    font-size: 4rem;
+}
+.container p {
+    margin: 0;
+    text-align: center;
+    color: grey;
+    font-size: 1.5rem;
+}
