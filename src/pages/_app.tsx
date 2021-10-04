@@ -1,7 +1,8 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { Footer } from "@/common";
 import "@/styles/globals.css";
+import { Footer, Header } from "@/common";
+import { ThemeProvider } from "next-themes";
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     return (
@@ -33,8 +34,11 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
                 <link rel="apple-touch-icon" href="/apple-icon.png"></link>
                 <meta name="theme-color" content="#2388ff" />
             </Head>
-            <Component {...pageProps} />
-            <Footer {...pageProps} />
+            <ThemeProvider defaultTheme="system">
+                <Header {...pageProps} />
+                <Component {...pageProps} />
+                <Footer {...pageProps} />
+            </ThemeProvider>
         </>
     );
 };

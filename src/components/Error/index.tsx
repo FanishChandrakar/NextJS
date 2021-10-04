@@ -1,5 +1,4 @@
-import React from "react";
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import styles from "@/styles/Error.module.css";
 
 const NetworkStatus = require("./NetworkStatus.json");
