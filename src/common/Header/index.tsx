@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import React, { useEffect, useState } from "react";
-import Theme from "@/utility/Theme";
+import { Theme } from "@/utility";
 import {
     Header as Container,
     HeaderFix,
