@@ -19,7 +19,7 @@
             "@/components/*": ["src/components/*"],
             "@/firebase/*": ["src/firebase/*"],
             "@/styles/*": ["src/styles/*"],
-            "@/utility/*": ["src/utility/*"]
+            "@/utility": ["src/utility"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

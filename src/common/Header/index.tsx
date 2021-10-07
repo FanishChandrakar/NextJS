@@ -1,25 +1,44 @@
 import type { NextPage } from "next";
-import React from "react";
-import styles from "@/styles/Header.module.css";
+import React, { useEffect, useState } from "react";
 import Theme from "@/utility/Theme";
+import {
+    Header as Container,
+    HeaderFix,
+    Slider,
+    SliderText,
+    Switch,
+    SwitchInput,
+} from "./Styled-Component";
 
 const Header: NextPage = () => {
+    /**
+     * When mounted on client, now we can show the UI
+     */
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => setMounted(true), []);
+
+    if (!mounted) return null;
+    // -----
+
     const [isDark, toggleTheme] = Theme.Use();
 
     return (
-        <header className={`${styles.header}`}>
-            <label className={`${styles.switch}`}>
-                <input
-                    type="checkbox"
-                    checked={isDark()}
-                    onChange={toggleTheme}
-                />
-                <span className={`${styles.slider} ${styles.round}`}>
-                    <span>🌜</span>
-                    <span>🌞</span>
-                </span>
-            </label>
-        </header>
+        <>
+            <Container>
+                <Switch>
+                    <SwitchInput
+                        type="checkbox"
+                        checked={isDark()}
+                        onChange={toggleTheme}
+                    />
+                    <Slider round>
+                        <SliderText>🌜</SliderText>
+                        <SliderText>🌞</SliderText>
+                    </Slider>
+                </Switch>
+            </Container>
+            <HeaderFix />
+        </>
     );
 };
 

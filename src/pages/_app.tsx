@@ -1,8 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import "@/styles/globals.css";
 import { Footer, Header } from "@/common";
-import Theme from "@/utility/Theme";
+import { GlobalStyle, Theme } from "@/utility";
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     return (
@@ -35,6 +34,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
                 <meta name="theme-color" content="#2388ff" />
             </Head>
             <Theme.Provider enableSystem={true} defaultTheme="system">
+                <GlobalStyle />
                 <Header {...pageProps} />
                 <Component {...pageProps} />
                 <Footer {...pageProps} />
