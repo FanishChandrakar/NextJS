@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import styles from "@/styles/Error.module.css";
+import { Container, Message, Title } from "./Styled-Component";
 
 const NetworkStatus = require("./NetworkStatus.json");
 
@@ -9,10 +9,10 @@ interface ErrorProps {
 
 const Error: NextPage<ErrorProps> = ({ statusCode }) => {
     return (
-        <div className={styles.container}>
-            <h1>{statusCode}</h1>
-            <p>Error: {NetworkStatus[statusCode]}</p>
-        </div>
+        <Container>
+            <Title>{statusCode}</Title>
+            <Message>Error: {NetworkStatus[statusCode]}</Message>
+        </Container>
     );
 };
 

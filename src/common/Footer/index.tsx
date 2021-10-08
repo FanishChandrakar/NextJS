@@ -1,27 +1,28 @@
 import type { NextPage } from "next";
 import React from "react";
 import Image from "next/image";
-import styles from "@/styles/Footer.module.css";
+
+import { Footer as Container, LogoView, PoweredBy } from "./Styled-Component";
 
 const Footer: NextPage = () => {
     return (
-        <footer className={styles.footer}>
-            <a
+        <Container>
+            <PoweredBy
                 href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 Powered by{" "}
-                <span className={styles.logo}>
+                <LogoView>
                     <Image
                         src="/vercel.svg"
                         alt="Vercel Logo"
                         width={72}
                         height={16}
                     />
-                </span>
-            </a>
-        </footer>
+                </LogoView>
+            </PoweredBy>
+        </Container>
     );
 };
 
