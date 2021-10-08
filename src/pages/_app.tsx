@@ -17,7 +17,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
                 <meta name="keywords" content="Keywords" />
                 <title>Global Finance</title>
 
-                <link rel="manifest" href="/manifest.json" />
+                <link rel="manifest" href="/site.webmanifest" />
                 <link
                     href="/icons/favicon-16x16.png"
                     rel="icon"
@@ -30,7 +30,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
                     type="image/png"
                     sizes="32x32"
                 />
-                <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+                <link
+                    rel="apple-touch-icon"
+                    href="/icons/apple-icon.png"
+                ></link>
                 <meta name="theme-color" content="#2388ff" />
             </Head>
             <ThemeSetting.Provider enableSystem={true} defaultTheme="system">
