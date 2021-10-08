@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import React, { useEffect, useState } from "react";
-import { Theme } from "@/utility";
+import { ThemeSetting } from "@/utility";
 import {
     Header as Container,
     HeaderFix,
@@ -20,7 +20,7 @@ const Header: NextPage = () => {
     if (!mounted) return null;
     // -----
 
-    const [isDark, toggleTheme] = Theme.Use();
+    const [isDark, toggleTheme] = ThemeSetting.Use();
 
     return (
         <>

@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Footer, Header } from "@/common";
-import { GlobalStyle, Theme } from "@/utility";
+import { StyledSetting, ThemeSetting } from "@/utility";
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     return (
@@ -33,12 +33,12 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
                 <link rel="apple-touch-icon" href="/apple-icon.png"></link>
                 <meta name="theme-color" content="#2388ff" />
             </Head>
-            <Theme.Provider enableSystem={true} defaultTheme="system">
-                <GlobalStyle />
+            <ThemeSetting.Provider enableSystem={true} defaultTheme="system">
+                <StyledSetting />
                 <Header {...pageProps} />
                 <Component {...pageProps} />
                 <Footer {...pageProps} />
-            </Theme.Provider>
+            </ThemeSetting.Provider>
         </>
     );
 };

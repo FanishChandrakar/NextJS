@@ -1,2 +1,2 @@
-export { default as GlobalStyle } from "./GlobalStyle";
-export { default as Theme } from "./Theme";
+export { default as StyledSetting } from "./StyledSetting";
+export { default as ThemeSetting } from "./ThemeSetting";
