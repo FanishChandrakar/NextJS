@@ -18,6 +18,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
                 <title>Global Finance</title>
 
                 <link rel="manifest" href="/site.webmanifest" />
+                <link rel="shortcut icon" href="/favicon.ico" />
                 <link
                     href="/icons/favicon-16x16.png"
                     rel="icon"
