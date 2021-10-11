@@ -22,13 +22,14 @@ a {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 :root {
     /* Your default value */
-    --headerHeight:5rem;
-    --footerHeight:5rem;
+    --headerHeight:10vh;
+    --bodyHeight:80vh;
+    --footerHeight:10vh;
     /* Your default theme */
     --background: #f3f5f9;
     --foreground: #18212b;

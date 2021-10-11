@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { Footer, Header } from "@/common";
+import { Footer, Header } from "@/components";
 import { StyledSetting, ThemeSetting } from "@/utility";
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {

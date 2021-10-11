@@ -1,19 +1,8 @@
+import { FlexContainer } from "@/components";
 import styled from "styled-components";
 
-export const Container = styled.div`
-    min-height: 90vh;
+export const Container = styled(FlexContainer)`
     padding: 5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`;
-
-export const Main = styled.main`
-    padding: 5rem 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 `;
