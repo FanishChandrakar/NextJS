@@ -15,8 +15,8 @@
         "jsx": "preserve",
         "baseUrl": ".",
         "paths": {
-            "@/common": ["src/common"],
-            "@/components/*": ["src/components/*"],
+            "@/components": ["src/components"],
+            "@/screens/*": ["src/screens/*"],
             "@/firebase/*": ["src/firebase/*"],
             "@/styles/*": ["src/styles/*"],
             "@/utility": ["src/utility"]

@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ThemeSetting } from "@/utility";
 import {
     Header as Container,
