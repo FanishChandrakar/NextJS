@@ -4,7 +4,7 @@ const DARK = "dark";
 const LIGHT = "light";
 
 const Use = (): [isDark: () => boolean, toggleTheme: () => void] => {
-    const { theme, setTheme } = useTheme();
+    const { resolvedTheme: theme, setTheme } = useTheme();
 
     const isDark = () => theme === DARK;
     const isLight = () => theme === LIGHT;
