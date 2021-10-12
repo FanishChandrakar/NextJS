@@ -21,19 +21,20 @@ const Header: NextPage = () => {
     // -----
 
     const [isDark, toggleTheme] = ThemeSetting.Use();
-
+    const _isDark = isDark();
     return (
         <>
             <Container>
                 <Switch>
                     <SwitchInput
                         type="checkbox"
-                        checked={isDark()}
+                        checked={_isDark}
                         onChange={toggleTheme}
                     />
                     <Slider round>
-                        <SliderText>🌜</SliderText>
-                        <SliderText>🌞</SliderText>
+                        {_isDark && <SliderText>🌜</SliderText>}
+                        <SliderText></SliderText>
+                        {!_isDark && <SliderText>🌞</SliderText>}
                     </Slider>
                 </Switch>
             </Container>
