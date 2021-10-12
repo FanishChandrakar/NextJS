@@ -27,9 +27,9 @@ a {
 
 :root {
     /* Your default value */
-    --headerHeight:10vh;
-    --bodyHeight:80vh;
-    --footerHeight:10vh;
+    --headerHeight: 70px;
+    --footerHeight: 70px;
+    --bodyHeight: calc(100vh - ( var(--headerHeight) + var(--footerHeight) ));
     /* Your default theme */
     --background: #f3f5f9;
     --foreground: #18212b;

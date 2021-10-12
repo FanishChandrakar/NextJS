@@ -8,7 +8,7 @@ interface ErrorProps {
 }
 
 const Error: NextPage<ErrorProps> = ({ statusCode }) => {
-    const msg = `${NetworkStatus[statusCode]} `;
+    const msg = `${NetworkStatus[statusCode]}... `;
     return (
         <Container>
             <Glitch {...{ statusCode }}>{statusCode}</Glitch>
