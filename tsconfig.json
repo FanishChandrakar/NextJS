@@ -17,7 +17,7 @@
         "paths": {
             "@/components": ["src/components"],
             "@/screens/*": ["src/screens/*"],
-            "@/firebase/*": ["src/firebase/*"],
+            "@/lib/*": ["src/lib/*"],
             "@/styles/*": ["src/styles/*"],
             "@/utility": ["src/utility"]
         }

@@ -31,11 +31,8 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
                     type="image/png"
                     sizes="32x32"
                 />
-                <link
-                    rel="apple-touch-icon"
-                    href="/icons/apple-icon.png"
-                ></link>
-                <meta name="theme-color" content="#2388ff" />
+                <link rel="apple-touch-icon" href="/icons/apple-icon.png" />
+                <meta name="theme-color" content="#0e1319" />
             </Head>
             <ThemeSetting.Provider enableSystem={true} defaultTheme="system">
                 <StyledSetting />

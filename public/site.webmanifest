@@ -1,8 +1,8 @@
 {
     "name": "Global Finance",
     "short_name": "gFinance",
-    "theme_color": "#2388ff",
-    "background_color": "#f3f5f9",
+    "theme_color": "#0e1319",
+    "background_color": "#0e1319",
     "display": "fullscreen",
     "orientation": "portrait",
     "scope": "/",
@@ -48,6 +48,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "splash_pages": null
+    ]
 }
