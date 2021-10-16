@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Color } from ".";
 
 export default createGlobalStyle`
 html,
@@ -26,21 +27,21 @@ a {
 }
 
 :root {
-    /* Your default value */
+    /* Default Value */
     --headerHeight: 70px;
     --footerHeight: 70px;
     --bodyHeight: calc(100vh - ( var(--headerHeight) + var(--footerHeight) ));
-    /* Your default theme */
-    --background: #f3f5f9;
-    --foreground: #18212b;
-    --primary: #2388ff;
-    --header: #0e1319;
+    /* Default Theme */
+    --background: ${Color.catskillWhite};
+    --foreground: ${Color.mirageBlack};
+    --primary: ${Color.dodgerBlue};
+    --header: ${Color.bunkerBlack};
 }
 
 [data-theme="dark"] {
-    --background: #18212b;
-    --foreground: #f3f5f9;
-    --primary: #2388ff;
-    --header: #0e1319;
+    --background: ${Color.mirageBlack};
+    --foreground: ${Color.catskillWhite};
+    --primary: ${Color.dodgerBlue};
+    --header: ${Color.bunkerBlack};
 }
 `;

@@ -1,3 +1,4 @@
+import { Color } from "@/utility";
 import styled, { css } from "styled-components";
 
 export const Header = styled.header`
@@ -49,7 +50,7 @@ export const Slider = styled.span`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #74bbfa;
+    background-color: ${Color.malibuBlue};
     -webkit-transition: 0.4s;
     transition: 0.4s;
     display: flex;
