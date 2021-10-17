@@ -5,16 +5,16 @@ export const Header = styled.header`
     position: fixed;
     top: 0;
     width: 100%;
-    height: var(--headerHeight);
-    background-color: var(--header);
+    height: var(--headerColorHeight);
+    background-color: var(--headerColor);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: ${Color.pickledwoodBlue} 0px 20px 30px -10px;
     padding: 0 5vw;
 `;
 export const HeaderFix = styled.header`
-    height: var(--headerHeight);
+    height: var(--headerColorHeight);
 `;
 
 /*  Toggle Switch  */
@@ -39,7 +39,7 @@ const isRound = ({ round }: SliderProps) =>
         }
 
         &:hover:before {
-            background-color: var(--header);
+            background-color: var(--primaryColor);
         }
     `;
 
@@ -50,15 +50,14 @@ export const Slider = styled.span`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${Color.malibuBlue};
+    background-color: var(--backgroundColor);
+    box-shadow: 0 0 5px var(--backgroundColor);
     -webkit-transition: 0.4s;
     transition: 0.4s;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    ${isRound}
 
     &:before {
         position: absolute;
@@ -67,7 +66,7 @@ export const Slider = styled.span`
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: white;
+        background-color: var(--headerColor);
         -webkit-transition: 0.4s;
         transition: 0.4s;
         display: flex;
@@ -75,20 +74,14 @@ export const Slider = styled.span`
         justify-content: center;
         align-items: center;
     }
+
+    ${isRound}
 `;
 
 export const SwitchInput = styled.input`
     opacity: 0;
     width: 0;
     height: 0;
-
-    &:checked + ${Slider} {
-        background-color: #4c408e;
-    }
-
-    &:focus + ${Slider} {
-        box-shadow: 0 0 5px #4c408e;
-    }
 
     &:checked + ${Slider}:before {
         -webkit-transform: translateX(26px);

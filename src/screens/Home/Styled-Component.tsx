@@ -14,7 +14,7 @@ export const Title = styled.h1`
     text-align: center;
 
     a {
-        color: var(--primary);
+        color: var(--primaryColor);
         text-decoration: none;
         &:hover,
         &:focus,
@@ -31,8 +31,8 @@ export const Description = styled.h1`
 `;
 
 export const Code = styled.code`
-    background: var(--foreground);
-    color: var(--background);
+    background: var(--foregroundColor);
+    color: var(--backgroundColor);
     border-radius: 5px;
     padding: 0.75rem;
     font-size: 1.1rem;
@@ -61,7 +61,7 @@ export const Card = styled.a`
     text-align: left;
     color: inherit;
     text-decoration: none;
-    border: 1px solid var(--foreground);
+    border: 1px solid var(--foregroundColor);
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
 
@@ -79,7 +79,7 @@ export const Card = styled.a`
     &:hover,
     &:focus,
     &:active {
-        color: var(--primary);
-        border-color: var(--primary);
+        color: var(--primaryColor);
+        border-color: var(--primaryColor);
     }
 `;

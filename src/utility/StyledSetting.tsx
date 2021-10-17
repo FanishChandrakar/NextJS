@@ -6,8 +6,8 @@ html,
 body {
     padding: 0;
     margin: 0;
-    background-color: var(--background);
-    color: var(--foreground);
+    background-color: var(--backgroundColor);
+    color: var(--foregroundColor);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -28,20 +28,20 @@ a {
 
 :root {
     /* Default Value */
-    --headerHeight: 70px;
+    --headerColorHeight: 70px;
     --footerHeight: 70px;
-    --bodyHeight: calc(100vh - ( var(--headerHeight) + var(--footerHeight) ));
+    --bodyHeight: calc(100vh - ( var(--headerColorHeight) + var(--footerHeight) ));
     /* Default Theme */
-    --background: ${Color.catskillWhite};
-    --foreground: ${Color.mirageBlack};
-    --primary: ${Color.dodgerBlue};
-    --header: ${Color.bunkerBlack};
+    --backgroundColor: ${Color.catskillWhite};
+    --foregroundColor: ${Color.stoneBlack};
+    --primaryColor: ${Color.dodgerBlue};
+    --headerColor: ${Color.bunkerBlack};
 }
 
 [data-theme="dark"] {
-    --background: ${Color.mirageBlack};
-    --foreground: ${Color.catskillWhite};
-    --primary: ${Color.dodgerBlue};
-    --header: ${Color.bunkerBlack};
+    --backgroundColor: ${Color.stoneBlack};
+    --foregroundColor: ${Color.catskillWhite};
+    --primaryColor: ${Color.dodgerBlue};
+    --headerColor: ${Color.bunkerBlack};
 }
 `;
