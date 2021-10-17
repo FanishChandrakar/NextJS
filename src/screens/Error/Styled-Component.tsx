@@ -7,7 +7,7 @@ export const Container = styled(FlexContainer)`
 `;
 
 export const Title = styled.h1`
-    color: var(--foreground);
+    color: var(--foregroundColor);
     margin: 0;
     font-size: 96px;
     letter-spacing: -7px;
@@ -28,7 +28,7 @@ const textLength = ({ msg }: MessageProps) => msg?.length;
 export const Message = styled.p`
     margin: 0;
     text-align: center;
-    color: var(--foreground);
+    color: var(--foregroundColor);
     font-size: 1.5rem;
     width: ${({ msg }: MessageProps) => msg?.length}ch;
     animation: ${typing} ${timing}s steps(${textLength}),

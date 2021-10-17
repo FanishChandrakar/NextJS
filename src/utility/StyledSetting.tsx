@@ -1,12 +1,13 @@
 import { createGlobalStyle } from "styled-components";
+import { Color } from ".";
 
 export default createGlobalStyle`
 html,
 body {
     padding: 0;
     margin: 0;
-    background-color: var(--background);
-    color: var(--foreground);
+    background-color: var(--backgroundColor);
+    color: var(--foregroundColor);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -26,21 +27,21 @@ a {
 }
 
 :root {
-    /* Your default value */
-    --headerHeight: 70px;
+    /* Default Value */
+    --headerColorHeight: 70px;
     --footerHeight: 70px;
-    --bodyHeight: calc(100vh - ( var(--headerHeight) + var(--footerHeight) ));
-    /* Your default theme */
-    --background: #f3f5f9;
-    --foreground: #18212b;
-    --primary: #2388ff;
-    --header: #0e1319;
+    --bodyHeight: calc(100vh - ( var(--headerColorHeight) + var(--footerHeight) ));
+    /* Default Theme */
+    --backgroundColor: ${Color.catskillWhite};
+    --foregroundColor: ${Color.stoneBlack};
+    --primaryColor: ${Color.dodgerBlue};
+    --headerColor: ${Color.bunkerBlack};
 }
 
 [data-theme="dark"] {
-    --background: #18212b;
-    --foreground: #f3f5f9;
-    --primary: #2388ff;
-    --header: #0e1319;
+    --backgroundColor: ${Color.stoneBlack};
+    --foregroundColor: ${Color.catskillWhite};
+    --primaryColor: ${Color.dodgerBlue};
+    --headerColor: ${Color.bunkerBlack};
 }
 `;

@@ -17,24 +17,24 @@ const Header: NextPage = () => {
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []);
 
-    if (!mounted) return null;
+    if (!mounted) return <HeaderFix />;
     // -----
 
     const [isDark, toggleTheme] = ThemeSetting.Use();
-    const _isDark = isDark();
+    // const _isDark = isDark();
     return (
         <>
             <Container>
                 <Switch>
                     <SwitchInput
                         type="checkbox"
-                        checked={_isDark}
+                        checked={isDark}
                         onChange={toggleTheme}
                     />
                     <Slider round>
-                        {_isDark && <SliderText>🌜</SliderText>}
+                        {isDark && <SliderText>🌜</SliderText>}
                         <SliderText></SliderText>
-                        {!_isDark && <SliderText>🌞</SliderText>}
+                        {!isDark && <SliderText>🌞</SliderText>}
                     </Slider>
                 </Switch>
             </Container>

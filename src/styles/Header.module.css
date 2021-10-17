@@ -1,6 +1,6 @@
 .header {
     height: 5rem;
-    background-color: var(--header);
+    background-color: var(--headerColor);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -78,7 +78,7 @@ input:checked + .slider:before {
 }
 
 .slider.round:hover:before {
-    background-color: var(--header);
+    background-color: var(--headerColor);
 }
 
 .slider span {
