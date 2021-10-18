@@ -12,6 +12,7 @@ export const Header = styled.header`
     align-items: center;
     box-shadow: ${Color.pickledwoodBlue} 0px 20px 30px -10px;
     padding: 0 5vw;
+    z-index: 100;
 `;
 export const HeaderFix = styled.header`
     height: var(--headerColorHeight);
@@ -34,11 +35,11 @@ const isRound = ({ round }: SliderProps) =>
     css`
         border-radius: 34px;
 
-        &:before {
+        &::before {
             border-radius: 50%;
         }
 
-        &:hover:before {
+        &:hover::before {
             background-color: var(--primaryColor);
         }
     `;
@@ -59,7 +60,7 @@ export const Slider = styled.span`
     justify-content: center;
     align-items: center;
 
-    &:before {
+    &::before {
         position: absolute;
         content: "";
         height: 26px;
@@ -83,7 +84,7 @@ export const SwitchInput = styled.input`
     width: 0;
     height: 0;
 
-    &:checked + ${Slider}:before {
+    &:checked + ${Slider}::before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
