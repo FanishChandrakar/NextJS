@@ -68,20 +68,20 @@ interface GlitchProps {
 export const Glitch = styled(Title)`
     animation: ${glitch} 3s linear infinite;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
         content: "${({ statusCode }: GlitchProps) => statusCode}";
         position: absolute;
         left: 0;
     }
 
-    &:before {
+    &::before {
         animation: ${glitchTop} 1.5s linear infinite;
         clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
     }
 
-    &:after {
+    &::after {
         animation: ${glitchBottom} 1s linear infinite;
         clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
         -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
