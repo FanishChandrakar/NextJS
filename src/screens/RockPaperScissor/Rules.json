@@ -1,0 +1,28 @@
+[
+    {
+        "value": "scissor",
+        "beats": ["paper", "lizard"],
+        "color": "#ECA922"
+    },
+
+    {
+        "value": "paper",
+        "beats": ["rock", "spock"],
+        "color": "#DD405D"
+    },
+    {
+        "value": "rock",
+        "beats": ["scissor", "lizard"],
+        "color": "#5671F5"
+    },
+    {
+        "value": "spock",
+        "beats": ["scissor", "rock"],
+        "color": "#8C5DE5"
+    },
+    {
+        "value": "lizard",
+        "beats": ["spock", "paper"],
+        "color": "#52BED1"
+    }
+]
