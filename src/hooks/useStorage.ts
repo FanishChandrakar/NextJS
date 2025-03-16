@@ -1,7 +1,6 @@
 import { useCallback, useState, useEffect } from "react";
 
 type Value = any;
-
 export type UseStorageReturn = [
     value: Value,
     setValue: (value: Value) => void,
