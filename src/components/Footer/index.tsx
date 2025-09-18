@@ -14,7 +14,7 @@ const Footer: NextPage = () => {
                 Powered by{" "}
                 <LogoView>
                     <Image
-                        src="/vercel.svg"
+                        src="/images/vercel.svg"
                         alt="Vercel Logo"
                         width={72}
                         height={16}
