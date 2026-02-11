@@ -2,7 +2,6 @@ import type { DependencyList } from "react";
 import { useCallback, useEffect, useState } from "react";
 
 type Value = any;
-
 export interface UseAsyncReturn {
     loading: boolean;
     error: ErrorConstructor | undefined;

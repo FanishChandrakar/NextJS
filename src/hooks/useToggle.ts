@@ -2,7 +2,7 @@ import { useState } from "react";
 
 type ToggleValue = (value: boolean) => void;
 
-export type UseToggleReturn = [value: boolean, toggleValue: ToggleValue];
+export type UseToggleReturn = [boolean, ToggleValue];
 type UseToggle = (defaultValue: boolean) => UseToggleReturn;
 
 export const useToggle: UseToggle = (defaultValue) => {
