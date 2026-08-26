@@ -8,7 +8,7 @@ import {
     Title,
 } from "./Styled-Component";
 
-const Home: NextPage = () => {
+const Demo: NextPage = () => {
     return (
         <Container>
             <Title>
@@ -56,4 +56,4 @@ const Home: NextPage = () => {
     );
 };
 
-export default Home;
+export default Demo;
